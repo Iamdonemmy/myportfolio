@@ -46,7 +46,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -64,7 +64,7 @@ export const Projects = () => {
                     part of the my projects successfully built.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
+                    {/* <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
                       id="pills-tab"
@@ -76,9 +76,9 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Get in Touch</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Connect with Me</Nav.Link>
+                        <Nav.Link eventKey="third">Project</Nav.Link>
                       </Nav.Item>
-                    </Nav>
+                    </Nav> */}
                     <Tab.Content
                       id="slideInUp"
                       className={
@@ -101,6 +101,11 @@ export const Projects = () => {
                         <p>
                           The only constant in the technology industry is change
                         </p>
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

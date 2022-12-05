@@ -75,16 +75,29 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    {" "}
-                    Innovative Front End Developer with proven experience.
-                    Capable of continuous learning from senior developers.
-                    Passionate about learning and development with a desire to
-                    apply skills on a larger development team. A Student of
-                    Computer Networking and Project Management.
+                    <b>NATIONALITY:</b> Nigerian <br></br>
+                    <b>LANGUAGES:</b> Professional Fluency in English and Yoruba
+                    <br></br>
+                    <b>INTERESTS:</b>
+                    <ul>
+                      <li>Meeting new people </li>
+                      <li>Fashion and Lifestyle </li>
+                    </ul>
+                    {/* <br></br> */}
+                    <b>PERSONAL SUMMARY:</b> Innovative Front-End Developer with
+                    proven experience. Capable of continuous learning from
+                    senior developers. Passionate about learning and development
+                    with a desire to apply skills on a larger development team.
+                    A Student of Computer Networking and Project Management.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+
+                  <br></br>
+                  <br></br>
+                  <br></br>
+
+                  {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>
